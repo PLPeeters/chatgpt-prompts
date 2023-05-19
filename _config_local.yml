@@ -27,7 +27,7 @@ baseurl: /chatgpt-prompts/ # the subpath of your site, e.g. /blog
 url: https://plpeeters.github.io # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 enable_copy_code_button: true
 back_to_top: true
 back_to_top_text: "Back to top"

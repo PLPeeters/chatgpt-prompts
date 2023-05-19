@@ -1,25 +1,3 @@
-function copyPrompt(button, promptId) {
-    const promptEl = document.getElementById(promptId);
-    const inputs = Array.from(promptEl.querySelectorAll('.inputs input'));
-    const textEl = promptEl.querySelector('pre');
-
-    let text = textEl.textContent;
-
-    inputs.forEach(input => {
-        const placeholder = input.getAttribute('data-placeholder');
-        const value = input.value || placeholder;
-        text = text.replace(placeholder, value);
-    });
-
-    navigator.clipboard.writeText(text);
-
-    button.textContent = 'Copied!';
-
-    setTimeout(() => {
-        button.textContent = 'Copy';
-    }, 750);
-}
-
 document.addEventListener('DOMContentLoaded', (event) => {
     // Grab all prompt elements
     var prompts = document.querySelectorAll('.prompt pre');
@@ -86,7 +64,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
 
         // Insert the input element before the prompt
-        prompt.parentNode.insertBefore(inputs, prompt);
+        var promptContainer = prompt.closest('.prompt-container');
+
+        promptContainer.insertBefore(inputs, promptContainer.childNodes[0]);
         prompt.textContent = updatedText;
     });
 

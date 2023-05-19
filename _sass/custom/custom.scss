@@ -8,7 +8,7 @@ body {
   font-family: $bodyFont;
 }
 
-pre {
+pre, pre code {
   white-space: pre-wrap;
 }
 
@@ -32,28 +32,4 @@ pre {
     display: block;
     width: 100%;
   }
-}
-
-// .prompt-container {
-//   position: relative;
-// }
-
-.copy-button {
-  // position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  vertical-align: bottom;
-  font-size: .6em;
-}
-
-.copy-button:hover {
-  background-color: #45a049;
 }

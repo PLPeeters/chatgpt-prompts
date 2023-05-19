@@ -2,8 +2,8 @@
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
-layout: default
-title: ''
+layout: home
+title: Prompts
 ---
 
 # Table of Contents
@@ -20,3 +20,5 @@ title: ''
 {% include prompt.html %}
 {% endfor %}
 {% endfor %}
+
+<script src="js/main.js"></script>
