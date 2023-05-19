@@ -49,12 +49,12 @@
       text: |-
         Condense the following article into bullet points of relevant information:
 
-        [article]
+        [article:textarea]
     - title: YouTube transcript summarisation
       text: |-
         Extract key points and information from the YouTube video transcript below. Do not hesitate to add additional information you might deem to be relevant, but mark added information using a sparkle emoji.
 
-        [transcript]
+        [transcript:textarea]
 - title: Meta
   prompts:
     - title: Explain previous response

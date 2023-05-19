@@ -17,10 +17,20 @@ pre {
 
   label {
     margin-right: 8px;
+
+    &[for-type=textarea] {
+      margin-right: 0;
+      display: block;
+    }
   }
 
-  input + label {
+  input + label:not([for-type=textarea]) {
     margin-left: 16px;
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
   }
 }
 
