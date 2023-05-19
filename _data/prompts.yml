@@ -1,0 +1,61 @@
+---
+- title: Prompt generation
+  prompts:
+    - title: Prompt refinement
+      text: |-
+        I want you to become my Prompt Engineer. Your goal is to help me craft the best possible prompt for my needs.
+
+        The prompt will be used by you, ChatGPT. You will follow the following process:
+
+        1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps.
+        2. Based on my input, you will generate 2 sections, a) Revised prompt (provide your rewritten prompt, it should be clear, concise, and easily understood by you), b) Questions (ask any relevant questions pertaining to what additional information is needed from me to improve the prompt).
+        3. We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised prompt section until I say we are done.
+    - title: Prompts for experts in a domain
+      text: |-
+        You are the manager of employees who are experts in [domain]. You recently came across ChatGPT, which can answer anything with the right prompt. You understand ChatGPT's limitations and how to explain the prompt in detail.
+
+        Find the most valuable strategies and techniques in each of the skills and create a list of very detailed ChatGPT prompts (don't ask questions). Prompts should increase productivity and automate mundane tasks.
+
+        Understand each prompt and insert placeholders where you think the user needs to input their data to get the prompt working to its full potential.
+- title: Learning
+  prompts:
+    - title: Very brief explanation
+      text: What is a concise, one-paragraph summary of the key concepts, context, and implications of [subject]?
+    - title: Sourced explanation
+      text: Can you provide me with a long and well-thought-out comprehensive yet simplified guide of [subject], that only includes offline information that you are certain is true and excludes any speculation or uncertainty? It is crucial that the explanation is detailed, comprehensive, in-depth and thoroughly researched, providing only accurate and reliable information. Include a % accuracy at the end of the explanation with reasoning for how accurate the information given is and why. Give 2 web sources with general urls (accurate as of 2021, ends in .com, .gov, or .org level of general) the user could read that could validate the accuracy of the information given.
+    - title: Key concepts as a story
+      text: Transform key concepts or lessons from [subject] into engaging stories or narratives to help me better remember and understand the material.
+    - title: Explanation as a story
+      text: Act as StoryBot. Storybot explains everything in form of a story, even the most complex topics. Today, I want StoryBot to explain [subject] to me.
+    - title: Mental models
+      text: Create mental models or analogies to help me understand and remember [subject].
+    - title: Visualization
+      text: Guide me through a visualization exercise to help me internalise [subject] and imagine myself successfully applying it to a real-life situation.
+    - title: Simplest explanation for a beginner
+      text: Explain [subject] in the simplest terms possible as if teaching it to a complete beginner. Identify gaps in my understanding and suggest resources to fill them.
+    - title: Mentoring, with tests
+      text: You are an elite [person]. And I am your student whom you must pass on your knowledge and expertise. In a series of sessions, you have to fulfil this duty and see that I have mastered [subject] by giving me tests that I would encounter in the real world.
+    - title: Five levels of understanding
+      text: Pretend like you are a [person]. Explain [subject] to me in 5 different levels of understanding from elementary school level to college level and beyond.
+    - title: Pareto learning plan
+      text: I want to learn [subject]. Can you use the Pareto principle, which identifies the 20% of the topic that will yield 80% of the desired results, to create a focused learning plan for me?
+- title: Critical thinking
+  prompts:
+    - title: Socratic method
+      text: I want you to act as a Socrat and use the Socratic method to help me improve my critical thinking, logic and reasoning skills. Your task is to ask open-ended questions to the statement I make and after I provide a response, give me constructive feedback to each response before you ask the next question.
+- title: Condensation
+  prompts:
+    - title: Article summarisation
+      text: |-
+        Condense the following article into bullet points of relevant information:
+
+        [article]
+    - title: YouTube transcript summarisation
+      text: |-
+        Extract key points and information from the YouTube video transcript below. Do not hesitate to add additional information you might deem to be relevant, but mark added information using a sparkle emoji.
+
+        [transcript]
+- title: Meta
+  prompts:
+    - title: Explain previous response
+      text: Explain the logic and reasoning behind your response in bullet points.

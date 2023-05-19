@@ -1,0 +1,10 @@
+<div class="prompt" id="{{ prompt.title | slugify }}">
+    <h3>
+        {{ prompt.title }}
+        <button class="copy-button" onclick="copyPrompt(this, '{{ prompt.title | slugify }}')">Copy</button>
+    </h3>
+
+    <div class="prompt-container">
+        <pre id="{{ prompt.title | slugify}}-prompt" class="prompt-text" data-original-text="{{ prompt.text }}">{{ prompt.text }}</pre>
+    </div>
+</div>
