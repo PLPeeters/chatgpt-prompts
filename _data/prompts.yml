@@ -42,7 +42,10 @@
 - title: Critical thinking
   prompts:
     - title: Socratic method
-      text: I want you to act as a Socrat and use the Socratic method to help me improve my critical thinking, logic and reasoning skills. Your task is to ask open-ended questions to the statement I make and after I provide a response, give me constructive feedback to each response before you ask the next question.
+      text: |-
+        I want you to act as a Socrat and use the Socratic method to help me improve my critical thinking, logic and reasoning skills. Your task is to ask open-ended questions to the statement I make and after I provide a response, give me constructive feedback to each response before you ask the next question. Here is my claim:
+
+        [claim:textarea]
 - title: Condensation
   prompts:
     - title: Article summarisation
