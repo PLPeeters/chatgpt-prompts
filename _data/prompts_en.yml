@@ -10,6 +10,16 @@
         1. Your first response will be to ask me what the prompt should be about. I will provide my answer, but we will need to improve it through continual iterations by going through the next steps.
         2. Based on my input, you will generate 2 sections, a) Revised prompt (provide your rewritten prompt, it should be clear, concise, and easily understood by you), b) Questions (ask any relevant questions pertaining to what additional information is needed from me to improve the prompt).
         3. We will continue this iterative process with me providing additional information to you and you updating the prompt in the Revised prompt section until I say we are done.
+    - title: Prompt clarification
+      text: |-
+        [prompt]
+
+        Ask me clarifying questions until you are over 95% certain that your answers will be relevant and accurate. Ask me at most five questions at a time.
+    - title: Self-criticism
+      text: |-
+        [prompt]
+
+        Finally, constructively criticize your response and rewrite it based on your criticism.
     - title: Prompts for experts in a domain
       text: |-
         You are the manager of employees who are experts in [domain]. You recently came across ChatGPT, which can answer anything with the right prompt. You understand ChatGPT's limitations and how to explain the prompt in detail.
@@ -39,6 +49,41 @@
       text: Pretend like you are a [person]. Explain [subject] to me in 5 different levels of understanding from elementary school level to college level and beyond.
     - title: Pareto learning plan
       text: I want to learn [subject]. Can you use the Pareto principle, which identifies the 20% of the topic that will yield 80% of the desired results, to create a focused learning plan for me?
+- title: Code
+  prompts:
+    - title: Explain code
+      text: |-
+        Can you explain what this piece of code does?
+
+        [code]
+    - title: Debugging
+      text: |-
+        I'm getting an error with this piece of code. Can you help me debug it?
+
+        [code]
+    - title: Optimisation
+      text: |-
+        Help me optimise the following piece of code, explaining the reasoning behind the changes:
+
+        [code]
+- title: Knowledge evaluation
+  prompts:
+    - title: Determine knowledge level
+      text: |-
+        Ask me a series of questions about [subject] and try to determine whether I am a beginner, intermediate, or expert in [subject]. Explain your reasoning and give me a short descriptive title that I could use to explain to others what level of understanding I have in [subject].
+
+        Once you have determined my level of understanding, provide me with a learning plan to get my knowledge to the next level.
+- title: Job interviews
+  prompts:
+    - title: Interview questions
+      text: |-
+        You are a highly experienced HR Interviewer, Recruitment Specialist and Job Recruitment Expert with vast knowledge and insight into human resources, talent acquisition, and the art of conducting successful job interviews. You have a deep understanding of the intricacies of assessing candidates for various roles and possess the ability to bring out the best in job applicants. Share your expertise, tips, and best practices for conducting effective interviews and evaluating candidates for a wide range of positions.
+
+        Today, your job is to provide guidance on crafting thought-provoking questions related to my application for a job as a [job title] that will encourage in-depth exploration and spark intellectual curiosity. Here is the job description:
+
+        [job description]
+
+        In a tabular format, use three columns, write 7 questions, provide guidance on how to best answer the questions and create an example of exactly what to say to each question.
 - title: Critical thinking
   prompts:
     - title: Socratic method
@@ -58,7 +103,23 @@
         Extract key points and information from the YouTube video transcript below. Do not hesitate to add additional information you might deem to be relevant, but mark added information using a sparkle emoji.
 
         [transcript:textarea]
+- title: Creative writing
+  prompts:
+    - title: Write a short story
+      text: |-
+        Can you generate a short story based on the following prompt:
+
+        [prompt]
+    - title: Character development
+      text: |-
+        I'm creating a character for a novel. Their name is [name], and they are a [profession]. Can you help me flesh out this character?
 - title: Meta
   prompts:
     - title: Explain previous response
       text: Explain the logic and reasoning behind your response in bullet points.
+    - title: Thinking step by step
+      description: Increases accuracy by forcing ChatGPT to think in steps.
+      text: |-
+        [prompt]
+
+        Let's think step by step.

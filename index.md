@@ -3,22 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-title: Prompts
+title: English
 ---
 
-# Table of Contents
-
-{% for category in site.data.prompts -%}
-* [{{ category.title }}](#{{ category.title | slugify }})
-    {% for prompt in category.prompts -%}* [{{ prompt.title }}](#{{ prompt.title | slugify }})
-    {% endfor %}
-{% endfor %}
-
-{% for category in site.data.prompts %}
-# {{ category.title }} {#{{ category.title | slugify }}}
-{% for prompt in category.prompts %}
-{% include prompt.html %}
-{% endfor %}
-{% endfor %}
-
-<script src="js/main.js"></script>
+{% assign prompts = site.data.prompts_en %}
+{% include prompts.md %}

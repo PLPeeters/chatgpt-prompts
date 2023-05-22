@@ -1,11 +1,15 @@
-<div class="prompt">
-    <h3 id="{{ prompt.title | slugify }}">{{ prompt.title }}</h3>
+<div class="prompt" markdown="1">
+## {{ prompt.title }}
 
-    <div class="prompt-container">
-        <div class="language-plaintext highlighter-rouge">
-            <div class="highlight">
-                <pre id="{{ prompt.title | slugify}}-prompt" class="prompt-text" data-original-text="{{ prompt.text }}"><code>{{ prompt.text }}</code></pre>
-            </div>
+{% if prompt.description %}
+<small><i>{{ prompt.description }}</i></small>
+{% endif %}
+
+<div class="prompt-container">
+    <div class="language-plaintext highlighter-rouge">
+        <div class="highlight">
+            <pre id="{{ prompt.title | slugify}}-prompt" class="prompt-text" data-original-text="{{ prompt.text }}"><code>{{ prompt.text }}</code></pre>
         </div>
     </div>
+</div>
 </div>
