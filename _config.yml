@@ -32,6 +32,9 @@ enable_copy_code_button: true
 back_to_top: true
 back_to_top_text: "Back to top"
 footer_content: by <a href="https://www.plpeeters.com" target="_blank">Pierre-Louis Peeters</a>
+aux_links:
+  "View on GitHub":
+    - "//github.com/plpeeters/chatgpt-prompts"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
